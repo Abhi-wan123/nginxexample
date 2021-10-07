@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                sh 'git clone https://github.com/abhijeetwankhade3108/apache-example.git'
+                sh 'git clone https://github.com/Abhi-wan123/nginxexample.git'
                 echo env.BRANCH_NAME
                 echo env.BUILD_NUMBER
                 echo env.BUILD_ID
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('copy files recursively') {
             steps {
-                sh "sudo cp -R apache-example/www/index.html /var/www/html/"
+                sh "sudo cp -R nginxexample/www/index.html /var/www/html/"
             } 
         } 
     }
