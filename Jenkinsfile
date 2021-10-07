@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                sh 'git clone https://github.com/Abhi-wan123/nginxexample.git'
+                //sh 'git clone https://github.com/Abhi-wan123/nginxexample.git'
                 echo env.BRANCH_NAME
                 echo env.BUILD_NUMBER
                 echo env.BUILD_ID
